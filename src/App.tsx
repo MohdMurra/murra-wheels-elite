@@ -9,6 +9,12 @@ import Index from "./pages/Index";
 import Inventory from "./pages/Inventory";
 import CarDetail from "./pages/CarDetail";
 import SignIn from "./pages/SignIn";
+import Register from "./pages/Register";
+import ForgotPassword from "./pages/ForgotPassword";
+import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
+import TestDriveRequest from "./pages/TestDriveRequest";
+import TradeInValue from "./pages/TradeInValue";
 import NotFound from "./pages/NotFound";
 
 // Create a new QueryClient instance with explicit configuration
@@ -35,6 +41,13 @@ const App = () => {
               <Route path="/inventory" element={<Inventory />} />
               <Route path="/car/:carId" element={<CarDetail />} />
               <Route path="/signin" element={<SignIn />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/test-drive" element={<TestDriveRequest />} />
+              <Route path="/test-drive/:carId" element={<TestDriveRequest />} />
+              <Route path="/trade-in" element={<TradeInValue />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
