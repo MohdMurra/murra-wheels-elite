@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { Car, Menu, User, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -56,9 +56,11 @@ const Navbar = () => {
             Contact
           </NavLink>
 
-          <Button variant="outline" size="sm" className="ml-4">
-            <User className="h-4 w-4 mr-2" />
-            Sign In
+          <Button variant="outline" size="sm" className="ml-4" asChild>
+            <Link to="/signin">
+              <User className="h-4 w-4 mr-2" />
+              Sign In
+            </Link>
           </Button>
         </div>
 
@@ -116,9 +118,12 @@ const Navbar = () => {
               variant="outline" 
               className="w-full mt-2"
               onClick={() => setIsMenuOpen(false)}
+              asChild
             >
-              <User className="h-4 w-4 mr-2" />
-              Sign In
+              <Link to="/signin">
+                <User className="h-4 w-4 mr-2" />
+                Sign In
+              </Link>
             </Button>
           </div>
         </div>

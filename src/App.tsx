@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Inventory from "./pages/Inventory";
 import CarDetail from "./pages/CarDetail";
+import SignIn from "./pages/SignIn";
 import NotFound from "./pages/NotFound";
 
 // Create a new QueryClient instance with explicit configuration
@@ -33,6 +34,7 @@ const App = () => {
               <Route path="/" element={<Index />} />
               <Route path="/inventory" element={<Inventory />} />
               <Route path="/car/:carId" element={<CarDetail />} />
+              <Route path="/signin" element={<SignIn />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
