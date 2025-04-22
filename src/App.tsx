@@ -21,6 +21,7 @@ import Services from "./pages/Services";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Sitemap from "./pages/Sitemap";
+import AdminDashboard from "./pages/AdminDashboard";
 
 // Create a new QueryClient instance with explicit configuration
 const queryClient = new QueryClient({
@@ -58,6 +59,7 @@ const App = () => {
               <Route path="/terms" element={<Terms />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/sitemap" element={<Sitemap />} />
+              <Route path="/admin/*" element={<AdminDashboard />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
