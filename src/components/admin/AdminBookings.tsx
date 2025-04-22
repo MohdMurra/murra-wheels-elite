@@ -60,7 +60,7 @@ const mockBookings = [
     appointmentType: 'Test Drive',
     date: '2023-07-08T16:30:00',
     status: 'Cancelled',
-    notes: 'Customer called to reschedule but hasn't picked a new date yet.'
+    notes: "Customer called to reschedule but hasn't picked a new date yet."
   },
   { 
     id: '5', 
