@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Calendar, Car, Clock, DollarSign, Fuel, Heart, Share2 } from 'lucide-react';
+import { ArrowLeft, Calendar, Car, Clock, DollarSign, Fuel, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -10,6 +10,10 @@ import { cars, CarType } from '@/data/cars';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CarCard from '@/components/CarCard';
+import SaveButton from '@/components/SaveButton';
+import ShareDialog from '@/components/ShareDialog';
+import FinancingCalculator from '@/components/FinancingCalculator';
+import PreApprovalForm from '@/components/PreApprovalForm';
 
 const CarDetail = () => {
   const { carId } = useParams<{ carId: string }>();
@@ -78,14 +82,11 @@ const CarDetail = () => {
             </Link>
           </Button>
           <div className="flex gap-2 items-center">
-            <Button variant="outline" size="sm">
-              <Heart className="h-4 w-4 mr-2" />
-              Save
-            </Button>
-            <Button variant="outline" size="sm">
-              <Share2 className="h-4 w-4 mr-2" />
-              Share
-            </Button>
+            <SaveButton itemId={car.id} />
+            <ShareDialog 
+              title={car.title}
+              url={window.location.href}
+            />
           </div>
         </div>
         
@@ -256,9 +257,15 @@ const CarDetail = () => {
               </div>
               
               <div className="space-y-3">
-                <Button className="w-full">Schedule a Test Drive</Button>
-                <Button variant="outline" className="w-full">Get Pre-Approved</Button>
-                <Button variant="secondary" className="w-full">Calculate Payment</Button>
+                <Button className="w-full" asChild>
+                  <Link to={`/test-drive/${car.id}`}>Schedule a Test Drive</Link>
+                </Button>
+                <PreApprovalForm>
+                  <Button variant="outline" className="w-full">Get Pre-Approved</Button>
+                </PreApprovalForm>
+                <FinancingCalculator carPrice={car.price}>
+                  <Button variant="secondary" className="w-full">Calculate Payment</Button>
+                </FinancingCalculator>
               </div>
               
               <Separator className="my-6" />
@@ -286,7 +293,9 @@ const CarDetail = () => {
               <p className="text-muted-foreground mb-4">
                 Find out how much your current vehicle is worth as a trade-in.
               </p>
-              <Button className="w-full">Get Trade-In Value</Button>
+              <Button className="w-full" asChild>
+                <Link to="/trade-in">Get Trade-In Value</Link>
+              </Button>
             </div>
           </div>
         </div>

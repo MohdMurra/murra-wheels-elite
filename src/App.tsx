@@ -16,6 +16,11 @@ import Contact from "./pages/Contact";
 import TestDriveRequest from "./pages/TestDriveRequest";
 import TradeInValue from "./pages/TradeInValue";
 import NotFound from "./pages/NotFound";
+import Testimonials from "./pages/Testimonials";
+import Services from "./pages/Services";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import Sitemap from "./pages/Sitemap";
 
 // Create a new QueryClient instance with explicit configuration
 const queryClient = new QueryClient({
@@ -48,6 +53,11 @@ const App = () => {
               <Route path="/test-drive" element={<TestDriveRequest />} />
               <Route path="/test-drive/:carId" element={<TestDriveRequest />} />
               <Route path="/trade-in" element={<TradeInValue />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/sitemap" element={<Sitemap />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

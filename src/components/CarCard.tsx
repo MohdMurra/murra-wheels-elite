@@ -5,6 +5,9 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import { CarType } from '@/data/cars';
+import QuickViewModal from './QuickViewModal';
+import SaveButton from './SaveButton';
+import ShareDialog from './ShareDialog';
 
 interface CarCardProps {
   car: CarType;
@@ -33,12 +36,7 @@ const CarCard = ({ car }: CarCardProps) => {
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute top-3 right-3">
-          <button
-            className="bg-background/80 hover:bg-background text-white p-1.5 rounded-full backdrop-blur-sm transition-colors"
-            aria-label="Add to favorites"
-          >
-            <Heart className="h-4 w-4" />
-          </button>
+          <SaveButton itemId={car.id} />
         </div>
         {car.isFeatured && (
           <div className="absolute top-3 left-3">
@@ -68,12 +66,10 @@ const CarCard = ({ car }: CarCardProps) => {
           </div>
         </div>
         <div className="mt-2 flex justify-between items-center">
-          <Button 
-            variant="outline" 
-            size="sm"
-          >
-            Quick View
-          </Button>
+          <QuickViewModal 
+            car={car}
+            trigger={<Button variant="outline" size="sm">Quick View</Button>}
+          />
           <Link to={`/car/${car.id}`}>
             <Button variant="default" size="sm">
               View Details

@@ -1,9 +1,26 @@
 
 import { Car, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [email, setEmail] = useState('');
+  const { toast } = useToast();
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      toast({
+        title: "Subscription Confirmed",
+        description: "Thank you for subscribing to our newsletter!"
+      });
+      setEmail('');
+    }
+  };
 
   return (
     <footer className="bg-secondary text-white pt-12 pb-6">
@@ -105,16 +122,22 @@ const Footer = () => {
             <p className="text-muted-foreground mb-4">
               Subscribe to receive updates on our latest inventory and special offers.
             </p>
-            <div className="flex">
-              <input 
+            <form onSubmit={handleSubscribe} className="flex">
+              <Input 
                 type="email" 
                 placeholder="Enter your email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
                 className="px-3 py-2 bg-muted text-white rounded-l-md w-full focus:outline-none focus:ring-1 focus:ring-accent"
               />
-              <button className="bg-primary hover:bg-primary/90 text-white px-4 rounded-r-md transition-colors">
+              <Button 
+                type="submit"
+                className="bg-primary hover:bg-primary/90 text-white px-4 rounded-r-md transition-colors"
+              >
                 Subscribe
-              </button>
-            </div>
+              </Button>
+            </form>
           </div>
         </div>
 
