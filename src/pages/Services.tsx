@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Car, DollarSign, Wrench, FileText, Shield } from 'lucide-react';
+import { Car, DollarSign, Wrench, FileText, Shield, Calculator, Star } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
