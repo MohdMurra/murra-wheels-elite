@@ -50,9 +50,9 @@ export const cars: CarType[] = [
     ],
     description: "Experience luxury like never before with this 2023 Mercedes-Benz S-Class. This executive sedan combines elegant styling with cutting-edge technology for an unparalleled driving experience. The powerful 4.0L V8 Biturbo engine delivers impressive performance while maintaining a smooth and comfortable ride.",
     images: [
-      "https://images.unsplash.com/photo-1563720223185-11003d516935",
-      "https://images.unsplash.com/photo-1555652736-e92021d28a39",
-      "https://images.unsplash.com/photo-1518987048-93e29699e79a"
+      "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1555652736-e92021d28a39?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1518987048-93e29699e79a?auto=format&fit=crop&q=80&w=800"
     ],
     isFeatured: true
   },
@@ -85,9 +85,9 @@ export const cars: CarType[] = [
     ],
     description: "This 2022 BMW 7 Series combines luxury and efficiency with its advanced hybrid powertrain. The spacious interior is crafted with premium materials, and the latest technology features ensure a connected and comfortable driving experience. The hybrid system provides impressive fuel economy without compromising on performance.",
     images: [
-      "https://images.unsplash.com/photo-1607853554439-0069ec0f29b6",
-      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2",
-      "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a"
+      "https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&q=80&w=800"
     ],
     isFeatured: true
   },
@@ -120,9 +120,9 @@ export const cars: CarType[] = [
     ],
     description: "This 2023 Audi A8 represents the pinnacle of Audi's luxury sedan lineup. With its sleek design and advanced technology, it offers a refined driving experience. The spacious interior features premium materials and cutting-edge amenities that cater to both driver and passengers.",
     images: [
-      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd",
-      "https://images.unsplash.com/photo-1543785832-0b6cadd31ba3",
-      "https://images.unsplash.com/photo-1573074617613-fc8ef27eaa2f"
+      "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1543785832-0b6cadd31ba3?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1573074617613-fc8ef27eaa2f?auto=format&fit=crop&q=80&w=800"
     ],
     isFeatured: false
   },
@@ -155,9 +155,9 @@ export const cars: CarType[] = [
     ],
     description: "This 2021 Tesla Model S offers incredible performance with zero emissions. The dual motor all-wheel drive system delivers instant torque and impressive acceleration. The minimalist interior features a large touchscreen that controls most vehicle functions. With Autopilot capabilities and long-range battery, this Model S represents the future of luxury motoring.",
     images: [
-      "https://images.unsplash.com/photo-1560958089-b8a1929cea89",
-      "https://images.unsplash.com/photo-1551826152-d7248d8a8c18",
-      "https://images.unsplash.com/photo-1566055909643-a51b4271d2bf"
+      "https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1551826152-d7248d8a8c18?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1566055909643-a51b4271d2bf?auto=format&fit=crop&q=80&w=800"
     ],
     isFeatured: true
   },
@@ -190,9 +190,9 @@ export const cars: CarType[] = [
     ],
     description: "This 2022 Porsche 911 Carrera S embodies the perfect balance of luxury and performance. With its iconic design and precision engineering, it delivers an exhilarating driving experience on both road and track. The twin-turbo flat-six engine produces remarkable power and an unmistakable sound that defines the 911 legacy.",
     images: [
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1580414057403-c5f451f30e1c"
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1580414057403-c5f451f30e1c?auto=format&fit=crop&q=80&w=800"
     ],
     isFeatured: false
   },
@@ -225,9 +225,9 @@ export const cars: CarType[] = [
     ],
     description: "This 2022 Range Rover Sport combines luxury with outstanding capability. Whether navigating city streets or venturing off-road, this premium SUV delivers confidence and comfort. The spacious interior features high-quality materials and advanced technology, while the powerful engine ensures impressive performance in all conditions.",
     images: [
-      "https://images.unsplash.com/photo-1536148935331-408321065b18",
-      "https://images.unsplash.com/photo-1583121274602-3e2820c69888",
-      "https://images.unsplash.com/photo-1542228891-df556e307a4b"
+      "https://images.unsplash.com/photo-1536148935331-408321065b18?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&q=80&w=800",
+      "https://images.unsplash.com/photo-1542228891-df556e307a4b?auto=format&fit=crop&q=80&w=800"
     ],
     isFeatured: true
   },
